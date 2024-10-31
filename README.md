@@ -1,4 +1,4 @@
-# TuneSuggest
+# Harsh Rathod Portfolio
 ![Project Banner](./assets/images/ProjectBanner.png)
 
 ## 📋 <a name="table">Table of Contents</a>
@@ -48,7 +48,7 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/panduthegang/LiveDocs-LandingPage.git
+git clone https://github.com/panduthegang/Personal-Portfolio.git
 cd personal-portfolio
 ```
 
