@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshfolio - Personal Portfolio</title>
+    
+    <!-- Meta tags for better SEO and sharing -->
+    <meta name="description" content="Welcome to Harshfolio - Personal Portfolio of Harsh Rathod, Full Stack Developer & UI/UX Designer">
+    <meta name="keywords" content="Harsh Rathod, portfolio, web developer, full stack developer, UI/UX designer">
+    <meta name="author" content="Harsh Rathod">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Harshfolio - Harsh Rathod's Portfolio">
+    <meta property="og:description" content="Personal Portfolio of Harsh Rathod - Full Stack Developer & UI/UX Designer">
+    <meta property="og:image" content="assets/metadata.svg">
+    <meta property="og:url" content="">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/metadata.svg">
+    
+    <!-- Existing CSS and Script links -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <img src="assets/logo.svg" alt="Harshfolio" height="40">
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#tech-stack">Tech Stack</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section with 3D Animation -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-image">
+                <img src="assets/Harsh Rathod.jpg" alt="Harsh Rathod">
+            </div>
+            <h1 class="animate-text">Hi, I'm <span class="highlight">Harsh Rathod</span></h1>
+            <p class="animate-text">Full Stack Developer & UI/UX Designer</p>
+            <a href="#contact" class="cta-button">Get In Touch</a>
+        </div>
+        <div id="three-container"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <div class="subtitle">UI/UX Designer & Full Stack Developer</div>
+                    <p class="intro">Hello! I'm <span class="highlight">Harsh Rathod</span>, a passionate UI/UX Designer and web developer based in Malad, Mumbai.</p>
+                    <p>My work focuses on bringing clarity and beauty to complex problems, designing interfaces that are both functional and delightful to use. With a solid foundation in front-end development and print media, I create products that are as visually engaging as they are user-friendly.</p>
+                    <p>My experience spans collaborations with well-known brands and hands-on college projects, each refining my ability to craft intuitive, responsive, and elegant designs. I'm also skilled in data-driven insights, with experience in tools like Power BI, SQL, and Tableau, allowing me to add an analytical depth to my creative work.</p>
+                    <p class="philosophy">For me, design isn't just about aesthetics—it's about creating seamless experiences with a personal touch, ensuring each project is built to resonate with its audience.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets/Harsh 2.JPG" alt="Harsh Rathod">
+                    <div class="experience-badge">
+                        <span class="years">3+</span>
+                        <span class="text">Years of<br>Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/project-1.png" alt="Live Docs">
+                </div>
+                <div class="project-content">
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Next.js</span>
+                        <!-- <span class="tech-tag"></span> -->
+                    </div>
+                    <h3>Live Docs</h3>
+                    <p>Modern Document Editing Platform with real-time collaboration.</p>
+                    <div class="project-links">
+                        <a href="https://livedocs-by-harsh-durvesh-rudra.vercel.app/sign-in" class="project-link live-demo">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Live Demo</span>
+                        </a>
+                        <a href="https://github.com/panduthegang/LiveDocs" class="project-link github">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/project-2.png" alt="Modern Landing Page">
+                </div>
+                <div class="project-content">
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Three.js</span>
+                        <!-- <span class="tech-tag">Stripe</span> -->
+                    </div>
+                    <h3>Modern Landing Page</h3>
+                    <p>Full-stack landing page with interactive 3D model and real-time updates.</p>
+                    <div class="project-links">
+                        <a href="https://live-docs-landing-page.vercel.app/" class="project-link live-demo">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Live Demo</span>
+                        </a>
+                        <a href="https://github.com/panduthegang/LiveDocs-LandingPage" class="project-link github">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/project-3.png" alt="Portfolio Dashboard">
+                </div>
+                <div class="project-content">
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">Js</span>
+                    </div>
+                    <h3>Portfolio Dashboard</h3>
+                    <p> Simple and responsive dashboard for personal Portfolio.</p>
+                    <div class="project-links">
+                        <a href="https://harsh-rathod-personal-portfolio.vercel.app/" class="project-link live-demo">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Live Demo</span>
+                        </a>
+                        <a href="https://github.com/panduthegang/Portfolio-" class="project-link github">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/project-4.png" alt="Coding Hustlers">
+                </div>
+                <div class="project-content">
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">Firebase</span>
+                    </div>
+                    <h3>Coding Hustlers</h3>
+                    <p>Mobile app for coding hustlers to connect, collaborate, and learn.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link live-demo">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Live Demo</span>
+                        </a>
+                        <a href="#" class="project-link github">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/project-5.png" alt="Zcrum">
+                </div>
+                <div class="project-content">
+                    <div class="project-tech">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">Clerk</span>
+                        <span class="tech-tag">Prisma</span>
+                    </div>
+                    <h3>Zcrum</h3>
+                    <p>Project management tool with real-time collaboration and issue tracking.</p>
+                    <div class="project-links">
+                        <a href="https://zcrum-by-harsh.vercel.app/" class="project-link live-demo">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Live Demo</span>
+                        </a>
+                        <a href="https://github.com/panduthegang/Zcrum" class="project-link github">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/project-6.png" alt="Sky Store">
+                </div>
+                <div class="project-content">
+                    <div class="project-tech">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">Appwrite</span>
+                    </div>
+                    <h3>Sky Store</h3>
+                    <p>Cloud storage platform with real-time collaboration, file sharing, and version control.</p>
+                    <div class="project-links">
+                        <a href="https://sky-store-by-harsh-rathod.vercel.app/" class="project-link live-demo">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Live Demo</span>
+                        </a>
+                        <a href="https://github.com/panduthegang/Sky-Store" class="project-link github">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/project-7.png" alt="Klimate">
+                </div>
+                <div class="project-content">
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Weather API</span>
+                        <span class="tech-tag">Chart.js</span>
+                    </div>
+                    <h3>Klimate</h3>
+                    <p>Interactive weather dashboard with real-time updates, forecasts, and data visualization.</p>
+                    <div class="project-links">
+                        <a href="https://klimate-by-harsh-rathod.vercel.app/" class="project-link live-demo">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Live Demo</span>
+                        </a>
+                        <a href="https://github.com/panduthegang/Klimate" class="project-link github">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/project-8.png" alt="Reflct">
+                </div>
+                <div class="project-content">
+                    <div class="project-tech">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">Prisma</span>
+                        <span class="tech-tag">Clerk</span>
+                    </div>
+                    <h3>Reflct</h3>
+                    <p>Journal App with Mood Tracking using AI and real-time updates .</p>
+                    <div class="project-links">
+                        <a href="https://journal-app-by-harsh-rathod.vercel.app/" class="project-link live-demo">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Live Demo</span>
+                        </a>
+                        <a href="https://github.com/panduthegang/Journal-App" class="project-link github">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills & Technologies</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-react"></i>
+                <h3>React</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="tech-stack">
+        <h2>Tech Stack</h2>
+        <div class="tech-categories">
+            <!-- Frontend Technologies -->
+            <div class="tech-category">
+                <h3>Frontend</h3>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-react"></i>
+                        <span>Next.js</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-react"></i>
+                        <span>React Native</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-cube"></i>
+                        <span>Three.js</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend Technologies -->
+            <div class="tech-category">
+                <h3>Backend</h3>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-fire"></i>
+                        <span>Firebase</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-database"></i>
+                        <span>Supabase</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-cloud"></i>
+                        <span>Appwrite</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools & Environment -->
+            <div class="tech-category">
+                <h3>Tools & Environment</h3>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-cloud"></i>
+                        <span>Vercel</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-code"></i>
+                        <span>VS Code</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-paint-brush"></i>
+                        <span>Figma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div class="info-content">
+                        <h3>Email</h3>
+                        <p>harshsrathod959@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="info-content">
+                        <h3>Location</h3>
+                        <p>K D Heights Bldg 4, Mumbai, India</p>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.2949141875606!2d72.85223737498013!3d19.18231718204432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7b8cd6ca2d9%3A0x1c56fd1d0c5ac6dd!2sK%20D%20Heights%20Bldg%204!5e0!3m2!1sen!2sin!4v1732972004746!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="250" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <!-- <div class="social-links">
+                    <a href="https://github.com/HarshRathod" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/HarshRathod" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/HarshRathod" target="_blank" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div> -->
+            </div>
+            <form class="contact-form" id="contactForm" action="mailto:harshsrathod959@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <label for="email">Your Email</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i>
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="assets/logo.svg" alt="Harshfolio" height="40">
+                <p>Crafting digital experiences with passion and precision.</p>
+            </div>
+            <div class="footer-right">
+                <h3>Connect</h3>
+                <div class="footer-social">
+                    <a href="https://github.com/panduthegang" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/harsh-rathod-2591b0292/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/HarshRathod" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <p class="footer-email">
+                    <i class="fas fa-envelope"></i>
+                    harshsrathod959@gmail.com
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Harsh Rathod. All rights reserved.</p>
+            <p>Made with <i class="fas fa-heart"></i> in Mumbai, India</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
