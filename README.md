@@ -49,8 +49,8 @@
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/panduthegang/portfolio.git
-   cd portfolio
+   git clone https://github.com/panduthegang/Personal-Portfolio.git
+   cd personal-portfolio
    ```
 3. **Open in Browser**
    - Navigate to `http://localhost:5500`
